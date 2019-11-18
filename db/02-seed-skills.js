@@ -1,4 +1,3 @@
-
 const skillData = require('./agenda')
 const Skill = require('../models/Agenda')
 

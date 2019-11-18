@@ -7,5 +7,4 @@ const skillSchema = new Schema({
     example: String
   })
   
-  
   module.exports = mongoose.model("Skill", skillSchema)

@@ -1,4 +1,3 @@
-
 const agendaData = require('./agenda')
 const Agenda = require('../models/Agenda')
 

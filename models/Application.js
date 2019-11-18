@@ -1,7 +1,6 @@
 const mongoose = require("../db/connection.js");
 const Schema = mongoose.Schema;
 
-
 const applicationSchema = new Schema({
   company: String,
   position: String,
