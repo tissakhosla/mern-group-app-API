@@ -1,0 +1,26 @@
+[
+    {
+        "company": "Apple",
+        "position": "CEO",
+        "link": "www.apple.com/careers",
+        "rate": 250000,
+        "contact": "Steve Jobs",
+        "status": true
+    },
+    {
+        "company": "FaceBook",
+        "position": "CFO",
+        "link": "www.facebook.com/careers",
+        "rate": 230000,
+        "contact": "Mark Zuckerburg",
+        "status": false
+    },
+    {
+        "company": "Google",
+        "position": "CTO",
+        "link": "www.google.com/careers",
+        "rate": 240000,
+        "contact": "Aubrey Graham",
+        "status": true
+    }
+]
