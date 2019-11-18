@@ -1,16 +1,34 @@
-const Application = require('../models/Agenda')
+const Agenda = require('../models/Agenda')
 
 module.exports = {
   index: (req, res) => {
-    Tracker.find({})
-      .then(user => {
-        res.json(user)
+    Agenda.find({})
+      .then(agenda => {
+        res.json(agenda)
       })
   },
-  update: function (req, res) { //u
-    Tracker.findOneAndUpdate({name: req.params.name}, req.body, { new: true, useFindAndModify: false })
-      .then(program => {
-        res.json(program)
+  findById: function (req, res) {
+    Agenda.findById({ _id: req.params._id })
+      .then(agenda => {
+        res.json(agenda)
       })
   },
+  create: (req, res) => {
+    Agenda.create(req.body)
+      .then(agenda => {
+        res.json(agenda)
+      })
+  },
+  updateById: (req, res) => {
+    Agenda.findOneAndUpdate({ _id: req.params._id }, req.body, { new: true })
+      .then(agenda => {
+        res.json(agenda)
+      })
+  },
+  deleteById: (req, res) => {
+    Agenda.findOneAndDelete({_id: req.params._id})
+      .then(agenda => {
+        res.json(agenda)
+      }) 
+  }
 }
