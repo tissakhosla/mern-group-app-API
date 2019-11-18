@@ -15,7 +15,7 @@ const statusSchema = new Schema({
 
 const applicationSchema = new Schema({
   company: String,
-  position: Number,
+  position: String,
   link: String,
   rate: Number,
   contacts: [contactSchema],
@@ -30,8 +30,7 @@ const skillSchema = new Schema({
 
 const agendaSchema = new Schema({
   eventType: String,
-  date: Date,
-  time: String,
+  dateAndTime: Date,
   description: String
 })
 
