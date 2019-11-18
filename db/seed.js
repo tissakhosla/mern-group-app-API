@@ -1,4 +1,4 @@
-let trackerData = require('./')
+let trackerData = require('./trackers.JSON')
 const Tracker = require('../models/Model')
 
 Tracker.deleteMany({}).then(() => {
