@@ -1,4 +1,4 @@
-const Tracker = require('../models/Tracker')
+const Tracker = require('../models/Application')
 
 module.exports = {
   index: (req, res) => {

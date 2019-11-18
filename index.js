@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 const parser = require("body-parser");
-const Tracker = require ("./models/Tracker")
+const Tracker = require ("./models/Application")
 const Trackercontroller = require ("./controllers/tracker")
 const Trackerroute = require ("./routes/trackerroute")
 const RouteIndex = require ("./routes/routeIndex")
