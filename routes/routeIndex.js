@@ -3,6 +3,6 @@ const router = express()
 
 router.use('/application', require('./applicationRoute'))
 // router.use('/agenda', require('./agendaRoute'))
-// router.use('/skill', require('./skillRoute'))
+router.use('/skill', require('./skillRoute'))
 
 module.exports = router
