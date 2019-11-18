@@ -1,0 +1,62 @@
+[
+    {
+        "company": "Apple",
+        "position": "CEO",
+        "link": "www.apple.com/careers",
+        "rate": 250000,
+        "contacts": [
+            {
+                "firstName": "Steve",
+                "lastName": "Jobs",
+                "phone": 2023334353,
+                "email": "StevieGotDemJobs@apple.com"
+            }
+        ],
+        "status": [
+            {
+                "submitted": true,
+                "date": "2019-11-10"
+            }
+        ]
+    },
+    {
+        "company": "FaceBook",
+        "position": "CFO",
+        "link": "www.facebook.com/careers",
+        "rate": 230000,
+        "contacts": [
+            {
+                "firstName": "Mark",
+                "lastName": "Zuckerberg",
+                "phone": 2023334355,
+                "email": "markyZucks@fb.com"
+            }
+        ],
+        "status": [
+            {
+                "submitted": false,
+                "date": "2019-11-20"
+            }
+        ]
+    },
+    {
+        "company": "Google",
+        "position": "CTO",
+        "link": "www.google.com/careers",
+        "rate": 240000,
+        "contacts": [
+            {
+                "firstName": "Aubrey",
+                "lastName": "Graham",
+                "phone": 6023334353,
+                "email": "scorpio@ovo.com"
+            }
+        ],
+        "status": [
+            {
+                "submitted": true,
+                "date": "2019-11-14"
+            }
+        ]
+    }
+]
