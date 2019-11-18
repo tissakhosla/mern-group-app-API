@@ -10,7 +10,7 @@ const contactSchema = new Schema({
 
 const statusSchema = new Schema({
   submitted: Boolean,
-  dateAndTime: Date
+  date: Date
 })
 
 const applicationSchema = new Schema({
@@ -30,7 +30,8 @@ const skillSchema = new Schema({
 
 const agendaSchema = new Schema({
   eventType: String,
-  dateAndTime: Date,
+  date: Date,
+  time: String,
   description: String
 })
 
