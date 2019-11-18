@@ -2,13 +2,13 @@ const Application = require('../models/Application')
 
 module.exports = {
   index: (req, res) => {
-    Tracker.find({})
-      .then(user => {
-        res.json(user)
+    Application.find({})
+      .then(application => {
+        res.json(application)
       })
   },
-  update: function (req, res) { //u
-    Tracker.findOneAndUpdate({name: req.params.name}, req.body, { new: true, useFindAndModify: false })
+  findById: function (req, res) { //u
+    Tracker.findById({id: req.params._id})
       .then(program => {
         res.json(program)
       })

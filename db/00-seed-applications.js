@@ -1,4 +1,4 @@
-const applicationData = require('./application')
+const applicationData = require('./applications')
 const Application = require('../models/Application')
 
 Application.deleteMany({}).then(() => {

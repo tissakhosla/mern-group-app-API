@@ -1,5 +1,5 @@
-const skillData = require('./agenda')
-const Skill = require('../models/Agenda')
+const skillData = require('./skills')
+const Skill = require('../models/Skill')
 
 Skill.deleteMany({}).then(() => {
   Skill.create(skillData).then(skillArray => {

@@ -1,4 +1,4 @@
-const agendaData = require('./agenda')
+const agendaData = require('./agendas')
 const Agenda = require('../models/Agenda')
 
 Agenda.deleteMany({}).then(() => {
