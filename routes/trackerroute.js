@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const trackerController = require('../controllers/tracker')
+const trackerController = require('../controllers/applicationController')
 
 router.get('/', trackerController.index)
 router.put('/id/:_id', trackerController.update)
