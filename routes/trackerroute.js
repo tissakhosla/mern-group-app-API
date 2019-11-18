@@ -1,8 +1,10 @@
 const express = require('express')
 const router = express.Router()
-// const bachelorController = require('../controllers/tracker')
 
-// router.get('/bachelor', bachelorController.index)
+const trackerController = require('../controllers/tracker')
+
+router.get('/', trackerController.index)
+router.put('/id/:_id', trackerController.update)
 // router.get('/bachelor/year/:year', bachelorController.showYear)
 // router.get('/bachelor/name/:name', bachelorController.showName)
 // router.post('/bachelor', bachelorController.create)

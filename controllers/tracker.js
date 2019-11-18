@@ -1,12 +1,21 @@
-// const Player = require('../models/Player')
+const Tracker = require('../models/Tracker')
 
-// module.exports = {
-//   index: (req, res) => {
-//     Player.find({})
-//       .then(player => {
-//         res.json(player)
-//       })
-//   },
+module.exports = {
+  index: (req, res) => {
+    Tracker.find({})
+      .then(user => {
+        res.json(user)
+      })
+  },
+  update: function (req, res) { //u
+    Tracker.findOneAndUpdate({name: req.params.name}, req.body, { new: true, useFindAndModify: false })
+      .then(program => {
+        res.json(program)
+      })
+  },
+}
+
+
 //   showTeam: (req, res) => {
 //     Player.find({teamId: req.params.teamId})
 //       .then(player => {

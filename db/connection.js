@@ -7,7 +7,6 @@ if (process.env.NODE_ENV === "production") {
   mongoURI = "mongodb://localhost/personalTracker"
 }
 
-// connect to the database, with the imported mongoose instance
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(instance =>
