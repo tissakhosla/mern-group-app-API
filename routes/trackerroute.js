@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const bachelorController = require('../controllers/tracker')
+// const bachelorController = require('../controllers/tracker')
 
 // router.get('/bachelor', bachelorController.index)
 // router.get('/bachelor/year/:year', bachelorController.showYear)
