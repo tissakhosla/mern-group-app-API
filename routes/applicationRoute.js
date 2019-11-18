@@ -1,13 +1,15 @@
 const express = require('express')
 const router = express.Router()
 
-const trackerController = require('../controllers/applicationController')
+const applicationController = require('../controllers/applicationController')
 
-router.get('/application', applicationController.index)
-router.get('/applicaiton/id/:_id', applicationController.findById)
-router.get('/applicaiton/company/:company', applicationController.findByCompany)
-router.post('/application/', applicationContoller.create)
-router.put('/application/company/:company', applicationController.updateById)
-router.put('/application/id/:_id', applicationController.update)
+router.get('/', applicationController.index)
+router.get('/id/:_id', applicationController.findById)
+router.get('/company/:company', applicationController.findByCompany)
+router.post('/', applicationController.create)
+router.put('/company/:company', applicationController.updateByCompany)
+router.put('/id/:_id', applicationController.updateById)
+router.delete('/company/:company', applicationController.deleteByCompany)
+router.delete('/id/:_id', applicationController.deleteById)
 
 module.exports = router

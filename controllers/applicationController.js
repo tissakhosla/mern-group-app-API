@@ -8,42 +8,45 @@ module.exports = {
       })
   },
   findById: function (req, res) { //u
-    Tracker.findById({id: req.params._id})
-      .then(program => {
-        res.json(program)
+    Application.findById({ _id: req.params._id })
+      .then(application => {
+        res.json(application)
       })
   },
-}
-
-
-//   showTeam: (req, res) => {
-//     Player.find({teamId: req.params.teamId})
-//       .then(player => {
-//         res.json(player)
-//       })
-//   },
-//   showLastName: (req, res) => {
-//     Player.find({lastName: req.params.lastName})
-//       .then(player => {
-//         res.json(player)
-//       })
-//   },
-//   create: (req, res) => {
-//     Player.create(req.body)
-//       .then(player => {
-//         res.json(player)
-//       })
-//   },
-//   edit: (req, res) => {
-//     Player.findOneAndUpdate({_id: req.params.Id}, req.body, {new: true})
-//       .then(player => {
-//         res.json(player)
-//       })
-//   },
-//   delete: (req, res) => {
-//     Player.findOneAndDelete({_id: req.params.Id})
-//       .then(player => {
-//         res.json(player)
-//       })
-//   }
-// }
+  findByCompany: function (req, res) { //u
+    Application.find({ company: req.params.company })
+      .then(application => {
+        res.json(application)
+      })
+  },
+  create: (req, res) => {
+    Application.create(req.body)
+      .then(application => {
+        res.json(application)
+      })
+  },
+  updateByCompany: (req, res) => {
+    Application.findOneAndUpdate({ company: req.params.company }, req.body, { new: true })
+      .then(application => {
+        res.json(application)
+      })
+  },
+  updateById: (req, res) => {
+    Application.findOneAndUpdate({ _id: req.params._id }, req.body, { new: true })
+      .then(application => {
+        res.json(application)
+      })
+  },
+    deleteByCompany: (req, res) => {
+    Application.findOneAndDelete({company: req.params.company})
+      .then(application => {
+        res.json(application)
+      }) 
+    },
+    deleteById: (req, res) => {
+    Application.findOneAndDelete({_id: req.params._id})
+      .then(application => {
+        res.json(application)
+      }) 
+    }
+  }
