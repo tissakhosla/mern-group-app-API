@@ -35,7 +35,7 @@ const agendaSchema = new Schema({
   description: String
 })
 
-const TrackerSchema = new Schema({
+const trackerSchema = new Schema({
   userName: String,
   headShot: String,
   skills: [skillSchema],
