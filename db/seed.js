@@ -1,2 +1,9 @@
-let trackerData = require('./1974-75-to-1982-83.json')
+let trackerData = require('./')
 const Tracker = require('../models/Model')
+
+Tracker.deleteMany({}).then(() => {
+  Tracker.create(trackerData).then(trackerArray => {
+    console.log(trackerArray.length);
+    process.exit();
+  });
+});
