@@ -8,5 +8,8 @@ app.use(parser.json());
 app.use(routeIndex);
 app.use(require('./routes/routeIndex'))
 
+app.set("port", process.env.PORT || 8080);
 
-app.listen(3000, () => console.log('listening on port 3000'));
+app.listen(app.get("port"), () => {
+  console.log(`✅ PORT: ${app.get("port")} 🌟`);
+});
