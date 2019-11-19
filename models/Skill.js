@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const skillSchema = new Schema({
   skill: String,
   proficiency: Number,
-  example: Array
+  example: [String]
 })
 
 module.exports = mongoose.model("Skill", skillSchema)
