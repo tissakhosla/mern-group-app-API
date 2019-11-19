@@ -2,11 +2,11 @@
     {
         "skill": "JavaScript",
         "proficiency": 9,
-        "examples": "Gladiator"
+        "example": "Gladiator"
     },
     {
         "skill": "React",
         "proficiency": 7,
-        "examples": "Full Stack MERN App"
+        "example": "Full Stack MERN App"
     }
 ]
