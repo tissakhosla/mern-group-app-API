@@ -1,10 +1,11 @@
-const express = require('express')
+const express = require('express');
+var cors = require('cors');
 const app = express();
 const parser = require("body-parser");
-const routeIndex = require ("./routes/routeIndex")
+const routeIndex = require ("./routes/routeIndex");
 
 app.use(parser.json());
-
+app.use(cors());
 app.use(routeIndex);
 app.use(require('./routes/routeIndex'))
 
