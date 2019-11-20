@@ -19,6 +19,10 @@ const userSchema = new Schema({
       required: true,
       max: 1000,
       min: 6
+  },
+  date: {
+      type: Date,
+      default: Date.now
   }
 })
 
