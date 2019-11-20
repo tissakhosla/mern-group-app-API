@@ -12,7 +12,7 @@ app.use(cors());
 app.use(routeIndex);
 app.use(require('./routes/routeIndex'))
 
-app.use('/users', userController)
+app.use('/userController', userController)
 app.set("port", process.env.PORT || 8080);
 
 app.listen(app.get("port"), () => {
