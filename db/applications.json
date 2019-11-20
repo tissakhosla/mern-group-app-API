@@ -5,7 +5,7 @@
         "link": "www.apple.com/careers",
         "rate": 250000,
         "contact": "Steve Jobs",
-        "status": true
+        "status": "Interview Upcoming"
     },
     {
         "company": "FaceBook",
@@ -13,7 +13,7 @@
         "link": "www.facebook.com/careers",
         "rate": 230000,
         "contact": "Mark Zuckerburg",
-        "status": false
+        "status": "Working on it"
     },
     {
         "company": "Google",
@@ -21,6 +21,6 @@
         "link": "www.google.com/careers",
         "rate": 240000,
         "contact": "Aubrey Graham",
-        "status": true
+        "status": "In Correspondence"
     }
 ]
