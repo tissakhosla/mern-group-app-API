@@ -2,7 +2,7 @@ const mongoose = require("../db/connection.js");
 const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
-  username: {
+  name: {
       type: String,
       required: true,
       min: 5,

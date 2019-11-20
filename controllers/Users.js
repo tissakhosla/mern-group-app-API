@@ -6,19 +6,15 @@ const config = require('../config/config')
 const User = require('../models/User')
 
 router.post('/signup', (req, res) => {
-    if (req.body.email && req.body.password) {
-      let newUser = {
-        email: req.body.email,
-        password: req.body.password
-      }
+    if (req.body.email && req.body.password && req.body.name) {
       User.findOne({ email: req.body.email })
         .then((user) => {
           if (!user) {
-            User.create(newUser)
+            User.create(req.body)
               .then(user => {
                 if (user) {
                   var payload = {
-                    id: newUser.id
+                    id: user.id
                   }
                   var token = jwt.encode(payload, config.jwtSecret)
                   res.json({
