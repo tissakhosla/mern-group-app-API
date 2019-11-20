@@ -7,7 +7,7 @@ const applicationSchema = new Schema({
   link: String,
   rate: Number,
   contacts: String,
-  status: Boolean
+  status: String
 })
 
 module.exports = mongoose.model("Application", applicationSchema)
