@@ -111,21 +111,59 @@ Here are some specified paths.
  
    `id=[integer]`
 
-* **Data Params**
 
-  None
+**Delete Skill**
+----
+  Deletes single skill.
 
-* **Example Success Response:**
+* **URL**
 
-  * **Code:** 200 <br />
-    **Content:** `{ id :  name : "" }`
+  /skill/:id
+
+* **Method:**
+
+  `Delete`
+  
+*  **URL Params**
+
+   **Required:**
  
-* **Error Response:**
+   `id=[integer]`
 
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "skill doesn't exist" }`
+**Update Skill**
+----
+  Updates single skill.
 
-  OR
+* **URL**
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+  /skill/:id
+
+* **Method:**
+
+  `Put`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `id=[integer]`
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Tissa Khosla - Tissa.music@gmail.com
+
+Raymond Nwambuonwo - Raymondnwambuonwogriffin@gmail.com
+
+Mustafa Hassan - mustafawhassan@gmail.com
+
+### Project : 
+[Click here for deployed backend Application Route](https://personal-tracker-mrt.herokuapp.com/application)  
+
+[Click here for deployed backend Agenda Route](https://personal-tracker-mrt.herokuapp.com/agenda) 
+
+[Click here for deployed backend Skill Route](https://personal-tracker-mrt.herokuapp.com/skill)
+
+
